@@ -7,7 +7,7 @@ function addIngredientFromDropdown(categoryId) {
     if (selectedValue && !selectedIngredients.includes(selectedValue)) {
         selectedIngredients.push(selectedValue);
         updateIngredientList();
-        dropdown.selectedIndex = 0; // Resetea el menú desplegable
+        dropdown.selectedIndex = 0; 
     } else if (selectedIngredients.includes(selectedValue)) {
         alert('Este ingrediente ya está seleccionado.');
     }

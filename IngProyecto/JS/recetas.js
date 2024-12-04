@@ -69,5 +69,5 @@ function displayRecipes(recipes) {
 }
 
 function goBack() {
-    window.location.href = 'indexIngredientes.html';
+    window.location.href = 'index.html';
 }
