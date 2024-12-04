@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona Ingredientes</title>
+    <link rel="stylesheet" href="CSS/ingredientes.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="notch"></div>
+        <div class="screen">
+            <header>
+                <button class="back-btn" aria-label="Volver">&#x2190;</button>
+                <h1>Añade los Ingredientes</h1>
+            </header>
+            <div class="ingredients-dropdowns">
+                <!-- Categorías de ingredientes -->
+                <div>
+                    <label for="vegetales">Vegetales:</label>
+                    <select id="vegetales" onchange="addIngredientFromDropdown('vegetales')">
+                        <option value="">Selecciona un vegetal</option>
+                        <option value="Tomate">Tomate</option>
+                        <option value="Cebolla">Cebolla</option>
+                        <option value="Zanahoria">Zanahoria</option>
+                        <option value="Lechuga">Lechuga</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="frutas">Frutas:</label>
+                    <select id="frutas" onchange="addIngredientFromDropdown('frutas')">
+                        <option value="">Selecciona una fruta</option>
+                        <option value="Manzana">Manzana</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="Fresa">Fresa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="carnes">Carnes:</label>
+                    <select id="carnes" onchange="addIngredientFromDropdown('carnes')">
+                        <option value="">Selecciona una carne</option>
+                        <option value="Pollo">Pollo</option>
+                        <option value="Carne de Res">Carne de Res</option>
+                        <option value="Pescado">Pescado</option>
+                        <option value="Cerdo">Cerdo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lacteos">Lácteos:</label>
+                    <select id="lacteos" onchange="addIngredientFromDropdown('lacteos')">
+                        <option value="">Selecciona un lácteo</option>
+                        <option value="Queso">Queso</option>
+                        <option value="Leche">Leche</option>
+                        <option value="Yogur">Yogur</option>
+                        <option value="Mantequilla">Mantequilla</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="hierbas">Hierbas y Especias:</label>
+                    <select id="hierbas" onchange="addIngredientFromDropdown('hierbas')">
+                        <option value="">Selecciona una hierba o especia</option>
+                        <option value="Albahaca">Albahaca</option>
+                        <option value="Orégano">Orégano</option>
+                        <option value="Perejil">Perejil</option>
+                        <option value="Canela">Canela</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ingredients" id="ingredient-list"></div>
+            <button class="next-btn" onclick="goToRecipes()">Siguiente</button>
+        </div>
+    </div>
+    <script src="JS/ingredientes.js"></script>
+</body>
+</html>

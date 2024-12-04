@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas - Easy Meals</title>
+    <link rel="stylesheet" href="CSS/recetas.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="notch"></div>
+        <div class="screen">
+            <header>
+                <button class="back-btn" aria-label="Volver" onclick="goBack()">&#x2190;</button>
+                <h1>Recetas</h1>
+            </header>
+            <div class="scroll-resultados">
+                <div class="recipe-grid" id="recipe-grid">
+                    <!-- Las recetas generadas se añadirán dinámicamente aquí -->
+                </div>
+            </div>
+            <button class="generate-btn" onclick="generateRecipes()">Generar Recetas</button>
+        </div>
+    </div>
+    <script src="JS/recetas.js"></script>
+</body>
+</html>

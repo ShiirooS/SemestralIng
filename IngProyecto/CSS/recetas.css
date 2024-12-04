@@ -1,0 +1,150 @@
+/* Estilo General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.phone-frame {
+    width: 380px;
+    height: 780px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 5px solid black;
+}
+
+.notch {
+    width: 150px;
+    height: 30px;
+    background-color: #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.screen {
+    flex: 1;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px #0000001a;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+/* Botón para regresar (back-btn) */
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: #28a746c9;
+}
+
+/* Botón para generar (generate-btn) */
+.generate-btn {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #28a745;
+    transform: translateY(-2px);
+}
+
+.generate-btn:active {
+    transform: translateY(1px);
+}
+
+/* Contenedor de Recetas (Diseño Cuadriculado) */
+#recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cada Receta */
+.recipe {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+
+.recipe h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
